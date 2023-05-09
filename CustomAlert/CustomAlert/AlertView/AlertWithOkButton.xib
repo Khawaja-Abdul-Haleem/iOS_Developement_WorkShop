@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertWithOkButton" customModule="CustomAlert" customModuleProvider="target">
+            <connections>
+                <outlet property="alertViewMain" destination="iN0-l3-epB" id="1p2-1q-5kl"/>
+                <outlet property="nameLabel" destination="yY5-xl-zpG" id="uNy-6o-f9p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srI-CV-ZAo">
+                    <rect key="frame" x="57" y="298" width="300" height="300"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeImage" translatesAutoresizingMaskIntoConstraints="NO" id="xuq-je-aHg">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="5yw-4u-uLi"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodLuckImage" translatesAutoresizingMaskIntoConstraints="NO" id="1tI-HY-hgz">
+                            <rect key="frame" x="0.0" y="150" width="300" height="150"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY5-xl-zpG">
+                            <rect key="frame" x="0.0" y="135" width="300" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="6cr-IN-lwM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="6MM-Ip-qDL"/>
+                        <constraint firstAttribute="width" constant="300" id="8Yg-1u-aoB"/>
+                        <constraint firstItem="xuq-je-aHg" firstAttribute="top" secondItem="srI-CV-ZAo" secondAttribute="top" id="Hn6-aK-l5r"/>
+                        <constraint firstItem="yY5-xl-zpG" firstAttribute="top" secondItem="xuq-je-aHg" secondAttribute="bottom" constant="-15" id="OXi-Pu-9Fa"/>
+                        <constraint firstAttribute="bottom" secondItem="1tI-HY-hgz" secondAttribute="bottom" id="RLc-Da-5H8"/>
+                        <constraint firstItem="1tI-HY-hgz" firstAttribute="leading" secondItem="srI-CV-ZAo" secondAttribute="leading" id="VHB-Ee-RfU"/>
+                        <constraint firstAttribute="trailing" secondItem="1tI-HY-hgz" secondAttribute="trailing" id="fJa-nh-zi1"/>
+                        <constraint firstItem="xuq-je-aHg" firstAttribute="leading" secondItem="srI-CV-ZAo" secondAttribute="leading" id="hgJ-he-ErI"/>
+                        <constraint firstItem="yY5-xl-zpG" firstAttribute="leading" secondItem="srI-CV-ZAo" secondAttribute="leading" id="jT8-LP-3H9"/>
+                        <constraint firstAttribute="trailing" secondItem="yY5-xl-zpG" secondAttribute="trailing" id="nMA-3O-1Z4"/>
+                        <constraint firstAttribute="trailing" secondItem="xuq-je-aHg" secondAttribute="trailing" id="u3N-Wd-HrU"/>
+                        <constraint firstItem="1tI-HY-hgz" firstAttribute="top" secondItem="yY5-xl-zpG" secondAttribute="bottom" constant="-10" id="y4b-Qp-c3f"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fye-wm-FLa">
+                    <rect key="frame" x="57" y="598" width="300" height="31"/>
+                    <color key="backgroundColor" red="1" green="0.92485146035953458" blue="0.78280515086894131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                    <connections>
+                        <action selector="oKButtonTapped:" destination="-1" eventType="touchUpInside" id="bZH-mM-zxH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.55686274509803924" green="0.74117647058823533" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fye-wm-FLa" firstAttribute="leading" secondItem="srI-CV-ZAo" secondAttribute="leading" id="1Va-22-WWK"/>
+                <constraint firstItem="fye-wm-FLa" firstAttribute="trailing" secondItem="srI-CV-ZAo" secondAttribute="trailing" id="I26-UW-JF9"/>
+                <constraint firstItem="fye-wm-FLa" firstAttribute="top" secondItem="srI-CV-ZAo" secondAttribute="bottom" id="QFv-If-ONC"/>
+                <constraint firstItem="srI-CV-ZAo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w2O-vR-yDq"/>
+                <constraint firstItem="srI-CV-ZAo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zg9-Ne-812"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="84"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="goodLuckImage" width="353" height="200"/>
+        <image name="welcomeImage" width="2000" height="1231"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
