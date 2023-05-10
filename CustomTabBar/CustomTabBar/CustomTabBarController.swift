@@ -10,7 +10,7 @@ import UIKit
 class CustomTabBarController: UITabBarController {
 
     
-    var upperLineView: UIView!
+    var upperLineView: UIImageView! // var upperLineView: UIView!
     
     let spacing: CGFloat = 12
 
@@ -19,12 +19,25 @@ class CustomTabBarController: UITabBarController {
        
         self.delegate = self
         
+        changeTabBarItemSpace()
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
             self.addTabbarIndicatorView(index: 0, isFirstTime: true)
         }
     }
     
-    ///Add tabbar item indicator uper line
+    func changeTabBarItemSpace() {
+       
+        let appearance = UITabBarAppearance()
+        appearance.stackedLayoutAppearance.normal.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 5)
+
+        tabBar.standardAppearance = appearance
+        tabBar.scrollEdgeAppearance = appearance
+    }
+    
+   
+    
+    //Add tabbar item indicator uper line
     func addTabbarIndicatorView(index: Int, isFirstTime: Bool = false){
         guard let tabView = tabBar.items?[index].value(forKey: "view") as? UIView else {
             return
@@ -32,8 +45,12 @@ class CustomTabBarController: UITabBarController {
         if !isFirstTime{
             upperLineView.removeFromSuperview()
         }
-        upperLineView = UIView(frame: CGRect(x: tabView.frame.minX + spacing, y: tabView.frame.minY + 0.1, width: tabView.frame.size.width - spacing * 2, height: 4))
-        upperLineView.backgroundColor = UIColor(red: 0.56, green: 0.74, blue: 1.00, alpha: 1.00)
+//        upperLineView = UIView(frame: CGRect(x: tabView.frame.minX + spacing, y: tabView.frame.minY + 0.1, width: tabView.frame.size.width - spacing * 2, height: 4))
+//        upperLineView.backgroundColor = UIColor(red: 0.56, green: 0.74, blue: 1.00, alpha: 1.00)
+        
+        upperLineView = UIImageView(frame: CGRect(x: tabView.frame.minX + spacing, y: tabView.frame.minY + 0.1, width: tabView.frame.size.width - spacing * 2, height: 13))
+        upperLineView.image = UIImage(named: "indicator")
+        
         upperLineView.layer.shadowRadius = 5
         upperLineView.layer.shadowColor = UIColor(red: 0.56, green: 0.74, blue: 1.00, alpha: 1.00).cgColor
         upperLineView.layer.shadowOffset = CGSize.zero

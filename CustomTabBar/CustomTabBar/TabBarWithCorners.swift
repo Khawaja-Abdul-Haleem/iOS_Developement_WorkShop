@@ -54,12 +54,13 @@ import UIKit
         super.layoutSubviews()
         self.isTranslucent = true
         var tabFrame = self.frame
+        
         tabFrame.size.height = 100
-        //tabFrame.size.height = 65 + self.frame.height
-        //tabFrame.origin.y = self.frame.origin.y //+ self.frame.height// - 65 - UIScreen.bottomSafeArea
+        tabFrame.origin.y = UIScreen.main.bounds.height - 100
+        
         self.layer.cornerRadius = 18
         self.frame = tabFrame
-        self.items?.forEach({ $0.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -5.0) })
+       // self.items?.forEach({ $0.titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -5.0) })
     }
     
 }
