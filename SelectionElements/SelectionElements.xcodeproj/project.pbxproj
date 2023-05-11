@@ -104,11 +104,11 @@
 				5061BD7D2A0CAD4500A8661E /* AppDelegate.swift */,
 				5061BD7F2A0CAD4500A8661E /* SceneDelegate.swift */,
 				5061BD812A0CAD4500A8661E /* ViewController.swift */,
+				5061BDAD2A0CAD7600A8661E /* CheckBox.swift */,
 				5061BD832A0CAD4500A8661E /* Main.storyboard */,
 				5061BD862A0CAD4B00A8661E /* Assets.xcassets */,
 				5061BD882A0CAD4B00A8661E /* LaunchScreen.storyboard */,
 				5061BD8B2A0CAD4B00A8661E /* Info.plist */,
-				5061BDAD2A0CAD7600A8661E /* CheckBox.swift */,
 			);
 			path = SelectionElements;
 			sourceTree = "<group>";
