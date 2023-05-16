@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShareSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMv-ap-wQV" userLabel="ShareView">
+                                <rect key="frame" x="7" y="273" width="400" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp7-1p-UfS" userLabel="ShareLocationButton">
+                                        <rect key="frame" x="70" y="50" width="260" height="50"/>
+                                        <color key="backgroundColor" red="0.74249983562761035" green="0.90728590752707339" blue="0.45146348456374741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oeB-u7-Mhs"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Share Location">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareLocationButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fo7-ar-OdJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsT-P6-a8x" userLabel="OpenSafariButton">
+                                        <rect key="frame" x="70" y="140" width="260" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.72839011825433309" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Open Safari">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openSafari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNp-Ks-ADY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1z-Hn-OOv" userLabel="OpenSafariButton">
+                                        <rect key="frame" x="70" y="230" width="260" height="50"/>
+                                        <color key="backgroundColor" red="0.58733380070778307" green="0.89742808011876607" blue="0.99617115645086163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Open Custom Controller">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openCustomControllerTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zx4-9t-GM9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98282026433620329" green="0.5" blue="0.44168170442004928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XsT-P6-a8x" firstAttribute="leading" secondItem="Lp7-1p-UfS" secondAttribute="leading" id="2yh-4b-mIR"/>
+                                    <constraint firstItem="XsT-P6-a8x" firstAttribute="height" secondItem="Lp7-1p-UfS" secondAttribute="height" id="8Uu-n4-Dsw"/>
+                                    <constraint firstItem="Lp7-1p-UfS" firstAttribute="leading" secondItem="bMv-ap-wQV" secondAttribute="leading" constant="70" id="8wn-Ss-40c"/>
+                                    <constraint firstItem="XsT-P6-a8x" firstAttribute="top" secondItem="Lp7-1p-UfS" secondAttribute="bottom" constant="40" id="H7c-cu-xf8"/>
+                                    <constraint firstItem="C1z-Hn-OOv" firstAttribute="trailing" secondItem="XsT-P6-a8x" secondAttribute="trailing" id="IEz-z2-Du2"/>
+                                    <constraint firstItem="Lp7-1p-UfS" firstAttribute="top" secondItem="bMv-ap-wQV" secondAttribute="top" constant="50" id="UxY-B6-B4d"/>
+                                    <constraint firstItem="C1z-Hn-OOv" firstAttribute="leading" secondItem="XsT-P6-a8x" secondAttribute="leading" id="dRB-zZ-p29"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lp7-1p-UfS" secondAttribute="trailing" constant="70" id="eCa-3M-uOt"/>
+                                    <constraint firstAttribute="height" constant="350" id="fn1-Q4-thY"/>
+                                    <constraint firstItem="C1z-Hn-OOv" firstAttribute="top" secondItem="XsT-P6-a8x" secondAttribute="bottom" constant="40" id="n4C-la-Aow"/>
+                                    <constraint firstItem="C1z-Hn-OOv" firstAttribute="height" secondItem="XsT-P6-a8x" secondAttribute="height" id="uc2-Hk-f8L"/>
+                                    <constraint firstItem="XsT-P6-a8x" firstAttribute="trailing" secondItem="Lp7-1p-UfS" secondAttribute="trailing" id="ya2-Dt-p90"/>
+                                    <constraint firstAttribute="width" constant="400" id="yvD-7I-LQx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bMv-ap-wQV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ai5-QG-jWf"/>
+                            <constraint firstItem="bMv-ap-wQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xal-EP-ULS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="54"/>
+        </scene>
+    </scenes>
+</document>
