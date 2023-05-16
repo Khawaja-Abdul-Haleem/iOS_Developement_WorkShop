@@ -1,9 +1,8 @@
 //
 //  LocationManager.swift
-//  UberCarAnimation
+//  GoogleMapLikeUber
 //
-//  Created by Mac mini on 8/20/18.
-//  Copyright © 2018 Mac mini. All rights reserved.
+//  Created by Khawaja Abdul Haleem on 16/05/2023.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

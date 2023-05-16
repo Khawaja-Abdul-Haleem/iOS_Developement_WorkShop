@@ -1,9 +1,8 @@
 //
 //  Extensions.swift
-//  UberCarAnimation
+//  GoogleMapLikeUber
 //
-//  Created by Suryakant Sharma on 28/09/19.
-//  Copyright © 2019 Mac mini. All rights reserved.
+//  Created by Khawaja Abdul Haleem on 16/05/2023.
 //
 
 import GoogleMaps
