@@ -1,9 +1,8 @@
 //
 //  SwiftShadowImageView.swift
-//  Swift_Shadow_ImageView
+//  toDoAPP
 //
-//  Created by George Leonidas on 17/09/2018.
-//  Copyright © 2018 George Leonidas. All rights reserved.
+//  Created by Khawaja Abdul Haleem on 18/05/2023.
 //
 
 import UIKit

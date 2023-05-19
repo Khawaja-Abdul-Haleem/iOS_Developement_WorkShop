@@ -21,3 +21,4 @@ let ALERT_TITLE = "Task"
 let ALERT_BUTTON_TITLE = "Add Task"
 let ALERT_TEXTFIELD_PLACEHOLDER = "Add Your Task"
 
+let SEGUE_SIGNUP_TO_MAIN = "signUpToMain"

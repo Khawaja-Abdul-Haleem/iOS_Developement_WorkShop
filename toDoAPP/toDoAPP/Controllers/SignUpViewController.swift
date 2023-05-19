@@ -27,7 +27,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func registerButtonTapped(_ sender: Any) {
         if nameField.text != "" {
-            performSegue(withIdentifier: "signUpToMain", sender: nil)
+            performSegue(withIdentifier: SEGUE_SIGNUP_TO_MAIN, sender: nil)
         }
       
         
