@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="addCheckBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8A-oD-mmc" userLabel="mainView">
+                                <rect key="frame" x="0.0" y="348" width="414" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0w-T1-bn2">
+                                        <rect key="frame" x="50" y="50" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="5dD-jE-u3X"/>
+                                            <constraint firstAttribute="height" constant="18" id="xs6-Lq-J7Y"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="uncheckTask" title=""/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UTN-YN-Ops"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFq-I3-nhF">
+                                        <rect key="frame" x="50" y="58" width="18" height="2"/>
+                                        <color key="backgroundColor" red="0.5215686559677124" green="0.92941176891326904" blue="0.61176472902297974" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="8Vi-Zx-Xn1"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="Upb-EF-1Ye"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cFq-I3-nhF" secondAttribute="trailing" priority="250" constant="50" id="2Xx-a1-lgz"/>
+                                    <constraint firstItem="cFq-I3-nhF" firstAttribute="leading" secondItem="Z0w-T1-bn2" secondAttribute="leading" id="3zE-Rm-p88"/>
+                                    <constraint firstAttribute="height" constant="200" id="FWB-XF-48k"/>
+                                    <constraint firstItem="cFq-I3-nhF" firstAttribute="centerY" secondItem="Z0w-T1-bn2" secondAttribute="centerY" id="Gsg-5a-oAp"/>
+                                    <constraint firstItem="Z0w-T1-bn2" firstAttribute="top" secondItem="q8A-oD-mmc" secondAttribute="top" constant="50" id="Wmn-8g-u6t"/>
+                                    <constraint firstItem="cFq-I3-nhF" firstAttribute="trailing" secondItem="Z0w-T1-bn2" secondAttribute="trailing" id="X0P-mz-n6u"/>
+                                    <constraint firstItem="Z0w-T1-bn2" firstAttribute="leading" secondItem="q8A-oD-mmc" secondAttribute="leading" constant="50" id="ZeL-zt-aQO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q8A-oD-mmc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pjm-Rj-DrC"/>
+                            <constraint firstItem="q8A-oD-mmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YuR-pp-2zP"/>
+                            <constraint firstItem="q8A-oD-mmc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lhY-Rs-q5X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q8A-oD-mmc" secondAttribute="trailing" id="tXA-ly-Vu4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkBox" destination="Z0w-T1-bn2" id="rgA-JQ-AIN"/>
+                        <outlet property="lineTrailing" destination="2Xx-a1-lgz" id="zaf-kp-BPv"/>
+                        <outlet property="lineView" destination="cFq-I3-nhF" id="mHb-nz-mmK"/>
+                        <outlet property="lineWidth" destination="X0P-mz-n6u" id="bbZ-WD-Xva"/>
+                        <outlet property="mainView" destination="q8A-oD-mmc" id="2L6-es-m3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="uncheckTask" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
